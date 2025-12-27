@@ -12,10 +12,10 @@ __author__ = "AGI Research Team"
 
 from .orchestrator import AGIOrchestrator
 from .state import AGIState
-# from .dspy_agi_agent import DSPyAGIAgent  # TODO: Implement
+from .dspy_agi_agent import DSPyAGIAgent
 
 __all__ = [
     "AGIOrchestrator",
     "AGIState",
-    # "DSPyAGIAgent",  # TODO: Implement
+    "DSPyAGIAgent",
 ]
