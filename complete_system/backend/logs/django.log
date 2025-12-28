@@ -1,0 +1,379 @@
+INFO 2025-12-28 16:13:21,049 autoreload Watching for file changes with StatReloader
+INFO 2025-12-28 16:13:57,318 autoreload Watching for file changes with StatReloader
+ERROR 2025-12-28 16:14:06,931 log Internal Server Error: /api/health/
+Traceback (most recent call last):
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/redis/connection.py", line 2596, in get_connection
+    connection = self._available_connections.pop()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: pop from empty list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/rest_framework/views.py", line 503, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/rest_framework/views.py", line 422, in initial
+    self.check_throttles(request)
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/rest_framework/views.py", line 365, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/rest_framework/throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/django/core/cache/backends/redis.py", line 188, in get
+    return self._cache.get(key, default)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/django/core/cache/backends/redis.py", line 100, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/redis/commands/core.py", line 1923, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/redis/client.py", line 657, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/redis/client.py", line 663, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/redis/utils.py", line 196, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/redis/connection.py", line 2598, in get_connection
+    connection = self.make_connection()
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/redis/connection.py", line 2648, in make_connection
+    return self.connection_class(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/redis/connection.py", line 1255, in __init__
+    super().__init__(**kwargs)
+TypeError: AbstractConnection.__init__() got an unexpected keyword argument 'CLIENT_CLASS'
+ERROR 2025-12-28 16:14:06,947 log "GET /api/health/ HTTP/1.1" 500 145
+INFO 2025-12-28 16:14:18,834 autoreload /workspace/resaerch01/complete_system/backend/backend/settings.py changed, reloading.
+INFO 2025-12-28 16:14:19,684 autoreload Watching for file changes with StatReloader
+INFO 2025-12-28 16:14:24,802 autoreload /workspace/resaerch01/complete_system/backend/backend/settings.py changed, reloading.
+INFO 2025-12-28 16:14:25,364 autoreload Watching for file changes with StatReloader
+INFO 2025-12-28 16:14:30,486 autoreload Watching for file changes with StatReloader
+INFO 2025-12-28 16:14:37,256 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:14:46,090 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:14:50,111 log "GET /api/health/ HTTP/1.1" 200 118
+ERROR 2025-12-28 16:14:55,220 log Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/backend/views.py", line 261, in get
+    from drf_spectacular.plumbing import build_serializer_error_schema
+ImportError: cannot import name 'build_serializer_error_schema' from 'drf_spectacular.plumbing' (/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/drf_spectacular/plumbing.py)
+ERROR 2025-12-28 16:14:55,224 log "GET /api/schema/ HTTP/1.1" 500 145
+ERROR 2025-12-28 16:14:58,749 log Internal Server Error: /api/schema/
+Traceback (most recent call last):
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/django/views/generic/base.py", line 106, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/backend/views.py", line 261, in get
+    from drf_spectacular.plumbing import build_serializer_error_schema
+ImportError: cannot import name 'build_serializer_error_schema' from 'drf_spectacular.plumbing' (/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/drf_spectacular/plumbing.py)
+ERROR 2025-12-28 16:14:58,750 log "GET /api/schema/ HTTP/1.1" 500 145
+INFO 2025-12-28 16:15:20,538 autoreload /workspace/resaerch01/complete_system/backend/backend/views.py changed, reloading.
+INFO 2025-12-28 16:15:21,066 autoreload Watching for file changes with StatReloader
+INFO 2025-12-28 16:15:46,073 autoreload Watching for file changes with StatReloader
+INFO 2025-12-28 16:16:05,703 autoreload /workspace/resaerch01/complete_system/backend/backend/views.py changed, reloading.
+INFO 2025-12-28 16:16:06,232 autoreload Watching for file changes with StatReloader
+INFO 2025-12-28 16:16:12,481 autoreload Watching for file changes with StatReloader
+INFO 2025-12-28 16:16:14,632 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:16:30,235 autoreload Watching for file changes with StatReloader
+INFO 2025-12-28 16:16:33,355 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:16:37,128 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:16:45,984 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:16:54,779 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:17:00,099 log "GET /api/health/ HTTP/1.1" 200 118
+ERROR 2025-12-28 16:17:13,070 log Internal Server Error: /api/analysis/
+Traceback (most recent call last):
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/resaerch01/complete_system/backend/venv/lib/python3.12/site-packages/rest_framework/viewsets.py", line 117, in view
+    handler = getattr(self, action)
+              ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnalysisViewSet' object has no attribute 'start'
+ERROR 2025-12-28 16:17:13,078 log "GET /api/analysis/ HTTP/1.1" 500 145
+INFO 2025-12-28 16:17:13,080 log "GET /api/schema/ HTTP/1.1" 200 215
+INFO 2025-12-28 16:17:34,124 autoreload /workspace/resaerch01/complete_system/backend/backend/urls.py changed, reloading.
+INFO 2025-12-28 16:17:34,675 autoreload Watching for file changes with StatReloader
+INFO 2025-12-28 16:17:41,122 log "GET /api/analysis/ HTTP/1.1" 200 2
+INFO 2025-12-28 16:21:06,632 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:21:06,635 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:21:06,636 log "GET /api/schema/ HTTP/1.1" 200 215
+INFO 2025-12-28 16:21:06,649 log "GET /api/analysis/ HTTP/1.1" 200 2
+INFO 2025-12-28 16:21:06,664 log "GET /api/analysis/?status=pending HTTP/1.1" 200 2
+WARNING 2025-12-28 16:21:06,665 log Unauthorized: /api/analysis/
+WARNING 2025-12-28 16:21:06,669 log "POST /api/analysis/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:21:06,670 log Unauthorized: /api/analysis/
+WARNING 2025-12-28 16:21:06,674 log "POST /api/analysis/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:21:06,696 log Not Found: /api/analysis/99999/
+WARNING 2025-12-28 16:21:06,697 log "GET /api/analysis/99999/ HTTP/1.1" 404 34
+WARNING 2025-12-28 16:21:06,709 log Not Found: /api/analysis/99999/results/
+WARNING 2025-12-28 16:21:06,710 log "GET /api/analysis/99999/results/ HTTP/1.1" 404 34
+WARNING 2025-12-28 16:21:06,711 log Unauthorized: /api/analysis/99999/cancel/
+WARNING 2025-12-28 16:21:06,713 log "POST /api/analysis/99999/cancel/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:21:06,714 log Unauthorized: /api/upload/
+WARNING 2025-12-28 16:21:06,718 log "POST /api/upload/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:21:07,069 log Unauthorized: /api/token/
+WARNING 2025-12-28 16:21:07,069 log "POST /api/token/ HTTP/1.1" 401 63
+WARNING 2025-12-28 16:21:07,281 log Unauthorized: /api/token/refresh/
+WARNING 2025-12-28 16:21:07,282 log "POST /api/token/refresh/ HTTP/1.1" 401 54
+INFO 2025-12-28 16:21:07,286 log "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-12-28 16:21:07,492 log "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4084
+INFO 2025-12-28 16:21:07,494 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:21:07,496 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:22:19,403 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:22:19,405 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:22:19,406 log "GET /api/schema/ HTTP/1.1" 200 215
+INFO 2025-12-28 16:22:19,422 log "GET /api/analysis/ HTTP/1.1" 200 2
+INFO 2025-12-28 16:22:19,437 log "GET /api/analysis/?status=pending HTTP/1.1" 200 2
+WARNING 2025-12-28 16:22:19,438 log Unauthorized: /api/analysis/
+WARNING 2025-12-28 16:22:19,439 log "POST /api/analysis/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:22:19,442 log Unauthorized: /api/analysis/
+WARNING 2025-12-28 16:22:19,444 log "POST /api/analysis/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:22:19,457 log Not Found: /api/analysis/99999/
+WARNING 2025-12-28 16:22:19,458 log "GET /api/analysis/99999/ HTTP/1.1" 404 34
+WARNING 2025-12-28 16:22:19,471 log Not Found: /api/analysis/99999/results/
+WARNING 2025-12-28 16:22:19,471 log "GET /api/analysis/99999/results/ HTTP/1.1" 404 34
+WARNING 2025-12-28 16:22:19,472 log Unauthorized: /api/analysis/99999/cancel/
+WARNING 2025-12-28 16:22:19,476 log "POST /api/analysis/99999/cancel/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:22:19,477 log Unauthorized: /api/upload/
+WARNING 2025-12-28 16:22:19,481 log "POST /api/upload/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:22:19,817 log Unauthorized: /api/token/
+WARNING 2025-12-28 16:22:19,818 log "POST /api/token/ HTTP/1.1" 401 63
+WARNING 2025-12-28 16:22:19,819 log Unauthorized: /api/token/refresh/
+WARNING 2025-12-28 16:22:19,822 log "POST /api/token/refresh/ HTTP/1.1" 401 54
+INFO 2025-12-28 16:22:19,823 log "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-12-28 16:22:19,826 log "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4084
+INFO 2025-12-28 16:22:19,828 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:22:19,831 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:22:55,316 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:22:55,318 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:22:55,319 log "GET /api/schema/ HTTP/1.1" 200 215
+INFO 2025-12-28 16:22:55,335 log "GET /api/analysis/ HTTP/1.1" 200 2
+INFO 2025-12-28 16:22:55,349 log "GET /api/analysis/?status=pending HTTP/1.1" 200 2
+WARNING 2025-12-28 16:22:55,350 log Unauthorized: /api/analysis/
+WARNING 2025-12-28 16:22:55,351 log "POST /api/analysis/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:22:55,352 log Unauthorized: /api/analysis/
+WARNING 2025-12-28 16:22:55,354 log "POST /api/analysis/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:22:55,369 log Not Found: /api/analysis/99999/
+WARNING 2025-12-28 16:22:55,369 log "GET /api/analysis/99999/ HTTP/1.1" 404 34
+WARNING 2025-12-28 16:22:55,400 log Not Found: /api/analysis/99999/results/
+WARNING 2025-12-28 16:22:55,401 log "GET /api/analysis/99999/results/ HTTP/1.1" 404 34
+WARNING 2025-12-28 16:22:55,402 log Unauthorized: /api/analysis/99999/cancel/
+WARNING 2025-12-28 16:22:55,404 log "POST /api/analysis/99999/cancel/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:22:55,405 log Unauthorized: /api/upload/
+WARNING 2025-12-28 16:22:55,408 log "POST /api/upload/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:22:55,728 log Unauthorized: /api/token/
+WARNING 2025-12-28 16:22:55,728 log "POST /api/token/ HTTP/1.1" 401 63
+WARNING 2025-12-28 16:22:55,730 log Unauthorized: /api/token/refresh/
+WARNING 2025-12-28 16:22:55,732 log "POST /api/token/refresh/ HTTP/1.1" 401 54
+INFO 2025-12-28 16:22:55,733 log "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-12-28 16:22:55,736 log "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4084
+INFO 2025-12-28 16:22:55,738 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:22:55,740 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:23:01,458 log "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-12-28 16:23:06,288 log "HEAD /admin/ HTTP/1.1" 302 0
+INFO 2025-12-28 16:23:29,787 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:23:29,789 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:23:29,790 log "GET /api/schema/ HTTP/1.1" 200 215
+INFO 2025-12-28 16:23:29,807 log "GET /api/analysis/ HTTP/1.1" 200 2
+INFO 2025-12-28 16:23:29,820 log "GET /api/analysis/?status=pending HTTP/1.1" 200 2
+WARNING 2025-12-28 16:23:29,821 log Unauthorized: /api/analysis/
+WARNING 2025-12-28 16:23:29,822 log "POST /api/analysis/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:23:29,824 log Unauthorized: /api/analysis/
+WARNING 2025-12-28 16:23:29,826 log "POST /api/analysis/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:23:29,840 log Not Found: /api/analysis/99999/
+WARNING 2025-12-28 16:23:29,840 log "GET /api/analysis/99999/ HTTP/1.1" 404 34
+WARNING 2025-12-28 16:23:29,853 log Not Found: /api/analysis/99999/results/
+WARNING 2025-12-28 16:23:29,853 log "GET /api/analysis/99999/results/ HTTP/1.1" 404 34
+WARNING 2025-12-28 16:23:29,854 log Unauthorized: /api/analysis/99999/cancel/
+WARNING 2025-12-28 16:23:29,857 log "POST /api/analysis/99999/cancel/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:23:29,858 log Unauthorized: /api/upload/
+WARNING 2025-12-28 16:23:29,861 log "POST /api/upload/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:23:30,205 log Unauthorized: /api/token/
+WARNING 2025-12-28 16:23:30,205 log "POST /api/token/ HTTP/1.1" 401 63
+WARNING 2025-12-28 16:23:30,207 log Unauthorized: /api/token/refresh/
+WARNING 2025-12-28 16:23:30,210 log "POST /api/token/refresh/ HTTP/1.1" 401 54
+INFO 2025-12-28 16:23:30,216 log "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-12-28 16:23:30,218 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:23:30,220 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:24:36,863 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:24:36,876 log "GET /api/analysis/ HTTP/1.1" 200 2
+WARNING 2025-12-28 16:24:36,877 log Unauthorized: /api/upload/
+WARNING 2025-12-28 16:24:36,877 log "POST /api/upload/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:24:37,213 log Unauthorized: /api/token/
+WARNING 2025-12-28 16:24:37,213 log "POST /api/token/ HTTP/1.1" 401 63
+INFO 2025-12-28 16:24:37,215 log "GET /api/schema/ HTTP/1.1" 200 215
+INFO 2025-12-28 16:25:32,652 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:25:32,673 log "GET /api/analysis/ HTTP/1.1" 200 2
+WARNING 2025-12-28 16:25:32,674 log Unauthorized: /api/upload/
+WARNING 2025-12-28 16:25:32,680 log "POST /api/upload/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:25:33,022 log Unauthorized: /api/token/
+WARNING 2025-12-28 16:25:33,023 log "POST /api/token/ HTTP/1.1" 401 63
+INFO 2025-12-28 16:25:33,024 log "GET /api/schema/ HTTP/1.1" 200 215
+INFO 2025-12-28 16:25:59,477 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:25:59,492 log "GET /api/analysis/ HTTP/1.1" 200 2
+WARNING 2025-12-28 16:25:59,493 log Unauthorized: /api/upload/
+WARNING 2025-12-28 16:25:59,494 log "POST /api/upload/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:25:59,841 log Unauthorized: /api/token/
+WARNING 2025-12-28 16:25:59,841 log "POST /api/token/ HTTP/1.1" 401 63
+INFO 2025-12-28 16:25:59,842 log "GET /api/schema/ HTTP/1.1" 200 215
+INFO 2025-12-28 16:26:26,642 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:26:26,715 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:26:26,716 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:26:26,718 log "GET /api/schema/ HTTP/1.1" 200 215
+INFO 2025-12-28 16:26:26,732 log "GET /api/analysis/ HTTP/1.1" 200 2
+INFO 2025-12-28 16:26:26,754 log "GET /api/analysis/?status=pending HTTP/1.1" 200 2
+WARNING 2025-12-28 16:26:26,755 log Unauthorized: /api/analysis/
+WARNING 2025-12-28 16:26:26,757 log "POST /api/analysis/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:26:26,758 log Unauthorized: /api/analysis/
+WARNING 2025-12-28 16:26:26,761 log "POST /api/analysis/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:26:26,774 log Not Found: /api/analysis/99999/
+WARNING 2025-12-28 16:26:26,775 log "GET /api/analysis/99999/ HTTP/1.1" 404 34
+WARNING 2025-12-28 16:26:26,789 log Not Found: /api/analysis/99999/results/
+WARNING 2025-12-28 16:26:26,789 log "GET /api/analysis/99999/results/ HTTP/1.1" 404 34
+WARNING 2025-12-28 16:26:26,790 log Unauthorized: /api/analysis/99999/cancel/
+WARNING 2025-12-28 16:26:26,794 log "POST /api/analysis/99999/cancel/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:26:26,795 log Unauthorized: /api/upload/
+WARNING 2025-12-28 16:26:26,798 log "POST /api/upload/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:26:27,135 log Unauthorized: /api/token/
+WARNING 2025-12-28 16:26:27,135 log "POST /api/token/ HTTP/1.1" 401 63
+WARNING 2025-12-28 16:26:27,136 log Unauthorized: /api/token/refresh/
+WARNING 2025-12-28 16:26:27,148 log "POST /api/token/refresh/ HTTP/1.1" 401 54
+INFO 2025-12-28 16:26:27,154 log "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-12-28 16:26:27,157 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:26:27,159 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:26:59,912 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:26:59,993 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:26:59,995 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:26:59,996 log "GET /api/schema/ HTTP/1.1" 200 215
+INFO 2025-12-28 16:27:00,027 log "GET /api/analysis/ HTTP/1.1" 200 2
+INFO 2025-12-28 16:27:00,042 log "GET /api/analysis/?status=pending HTTP/1.1" 200 2
+WARNING 2025-12-28 16:27:00,042 log Unauthorized: /api/analysis/
+WARNING 2025-12-28 16:27:00,049 log "POST /api/analysis/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:27:00,050 log Unauthorized: /api/analysis/
+WARNING 2025-12-28 16:27:00,053 log "POST /api/analysis/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:27:00,070 log Not Found: /api/analysis/99999/
+WARNING 2025-12-28 16:27:00,070 log "GET /api/analysis/99999/ HTTP/1.1" 404 34
+WARNING 2025-12-28 16:27:00,084 log Not Found: /api/analysis/99999/results/
+WARNING 2025-12-28 16:27:00,084 log "GET /api/analysis/99999/results/ HTTP/1.1" 404 34
+WARNING 2025-12-28 16:27:00,085 log Unauthorized: /api/analysis/99999/cancel/
+WARNING 2025-12-28 16:27:00,087 log "POST /api/analysis/99999/cancel/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:27:00,088 log Unauthorized: /api/upload/
+WARNING 2025-12-28 16:27:00,090 log "POST /api/upload/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:27:00,442 log Unauthorized: /api/token/
+WARNING 2025-12-28 16:27:00,442 log "POST /api/token/ HTTP/1.1" 401 63
+WARNING 2025-12-28 16:27:00,443 log Unauthorized: /api/token/refresh/
+WARNING 2025-12-28 16:27:00,448 log "POST /api/token/refresh/ HTTP/1.1" 401 54
+INFO 2025-12-28 16:27:00,453 log "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-12-28 16:27:00,457 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:27:00,465 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:27:00,561 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 16:27:00,579 log "GET /api/analysis/ HTTP/1.1" 200 2
+WARNING 2025-12-28 16:27:00,581 log Unauthorized: /api/upload/
+WARNING 2025-12-28 16:27:00,582 log "POST /api/upload/ HTTP/1.1" 401 58
+WARNING 2025-12-28 16:27:00,911 log Unauthorized: /api/token/
+WARNING 2025-12-28 16:27:00,911 log "POST /api/token/ HTTP/1.1" 401 63
+INFO 2025-12-28 16:27:00,913 log "GET /api/schema/ HTTP/1.1" 200 215
+INFO 2025-12-28 17:17:34,927 autoreload Watching for file changes with StatReloader
+INFO 2025-12-28 17:18:14,021 autoreload Watching for file changes with StatReloader
+INFO 2025-12-28 17:18:30,582 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 17:18:47,482 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 17:18:47,484 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 17:18:47,486 log "GET /api/schema/ HTTP/1.1" 200 215
+INFO 2025-12-28 17:18:47,501 log "GET /api/analysis/ HTTP/1.1" 200 2
+INFO 2025-12-28 17:18:47,515 log "GET /api/analysis/?status=pending HTTP/1.1" 200 2
+WARNING 2025-12-28 17:18:47,516 log Unauthorized: /api/analysis/
+WARNING 2025-12-28 17:18:47,517 log "POST /api/analysis/ HTTP/1.1" 401 58
+WARNING 2025-12-28 17:18:47,518 log Unauthorized: /api/analysis/
+WARNING 2025-12-28 17:18:47,521 log "POST /api/analysis/ HTTP/1.1" 401 58
+WARNING 2025-12-28 17:18:47,535 log Not Found: /api/analysis/99999/
+WARNING 2025-12-28 17:18:47,535 log "GET /api/analysis/99999/ HTTP/1.1" 404 34
+WARNING 2025-12-28 17:18:47,549 log Not Found: /api/analysis/99999/results/
+WARNING 2025-12-28 17:18:47,550 log "GET /api/analysis/99999/results/ HTTP/1.1" 404 34
+WARNING 2025-12-28 17:18:47,551 log Unauthorized: /api/analysis/99999/cancel/
+WARNING 2025-12-28 17:18:47,556 log "POST /api/analysis/99999/cancel/ HTTP/1.1" 401 58
+WARNING 2025-12-28 17:18:47,557 log Unauthorized: /api/upload/
+WARNING 2025-12-28 17:18:47,559 log "POST /api/upload/ HTTP/1.1" 401 58
+WARNING 2025-12-28 17:18:47,906 log Unauthorized: /api/token/
+WARNING 2025-12-28 17:18:47,906 log "POST /api/token/ HTTP/1.1" 401 63
+WARNING 2025-12-28 17:18:47,966 log Unauthorized: /api/token/refresh/
+WARNING 2025-12-28 17:18:47,966 log "POST /api/token/refresh/ HTTP/1.1" 401 54
+INFO 2025-12-28 17:18:47,977 log "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-12-28 17:18:47,981 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 17:18:47,984 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 17:18:48,072 log "GET /api/health/ HTTP/1.1" 200 118
+INFO 2025-12-28 17:18:48,086 log "GET /api/analysis/ HTTP/1.1" 200 2
+WARNING 2025-12-28 17:18:48,087 log Unauthorized: /api/upload/
+WARNING 2025-12-28 17:18:48,089 log "POST /api/upload/ HTTP/1.1" 401 58
+WARNING 2025-12-28 17:18:48,424 log Unauthorized: /api/token/
+WARNING 2025-12-28 17:18:48,424 log "POST /api/token/ HTTP/1.1" 401 63
+INFO 2025-12-28 17:18:48,426 log "GET /api/schema/ HTTP/1.1" 200 215

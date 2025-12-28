@@ -1,0 +1,37 @@
+{
+  "mcpServers": {
+    "pandas-mcp": {
+      "command": "python",
+      "args": [
+        "c:\\Users\\ADHITHAN\\Desktop\\dsa agent\\complete_system\\core\\pandas_mcp_server.py"
+      ],
+      "description": "Custom pandas MCP server with 20+ data science tools"
+    },
+    "MCP_DOCKER": {
+      "command": "docker",
+      "args": ["mcp", "gateway", "run"],
+      "type": "stdio",
+      "description": "Docker MCP Toolkit - Access all installed MCP servers (GitHub, Playwright, etc.)",
+      "enabled": false,
+      "note": "Enable in Docker Desktop: Settings → Beta features → Enable Docker MCP Toolkit, then install servers from Catalog"
+    },
+    "jupyter-mcp": {
+      "url": "http://localhost:8888/mcp",
+      "type": "sse",
+      "description": "Jupyter MCP Server - Persistent notebook execution (400+ tools)",
+      "enabled": true,
+      "token": "MY_TOKEN",
+      "note": "Connected to running Jupyter Lab at http://localhost:8888"
+    }
+  },
+  "mistral": {
+    "apiKey": "6IOUctuofzEsOgw0SHi17BfmjoieITTQ",
+    "model": "mistral-large-latest"
+  },
+  "langfuse": {
+    "publicKey": "pk-lf-53f3176f-72f7-4183-9cdc-e589f62ab968",
+    "secretKey": "sk-lf-65bf0f45-143e-4a6c-883f-769cd8da4444",
+    "host": "https://cloud.langfuse.com",
+    "project": "cmjjvmsum00ocad07iwap2dy4"
+  }
+}

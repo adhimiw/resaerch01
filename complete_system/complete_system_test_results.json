@@ -1,0 +1,41 @@
+{
+  "timestamp": 1766904742.25552,
+  "total_tests": 8,
+  "passed": 8,
+  "failed": 0,
+  "success_rate": 100.0,
+  "results": {
+    "Environment Configuration": {
+      "status": "SUCCESS",
+      "timestamp": 1766904739.1756034
+    },
+    "Autonomous MCP Server": {
+      "status": "SUCCESS",
+      "timestamp": 1766904739.1774416
+    },
+    "Self-Healing Executor": {
+      "status": "SUCCESS",
+      "timestamp": 1766904742.1778884
+    },
+    "Pandas MCP Tools": {
+      "status": "SUCCESS",
+      "timestamp": 1766904742.1923847
+    },
+    "Workflow Execution": {
+      "status": "SUCCESS",
+      "timestamp": 1766904742.2097945
+    },
+    "Multi-Dataset Analysis": {
+      "status": "SUCCESS",
+      "timestamp": 1766904742.2254138
+    },
+    "Correlation Analysis": {
+      "status": "SUCCESS",
+      "timestamp": 1766904742.2405438
+    },
+    "Statistical Analysis": {
+      "status": "SUCCESS",
+      "timestamp": 1766904742.2522063
+    }
+  }
+}
