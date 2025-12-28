@@ -1,0 +1,45 @@
+{
+  "shape": [
+    800,
+    11
+  ],
+  "columns": [
+    "Age",
+    "Gender",
+    "Fast_Food_Meals_Per_Week",
+    "Average_Daily_Calories",
+    "BMI",
+    "Physical_Activity_Hours_Per_Week",
+    "Sleep_Hours_Per_Day",
+    "Energy_Level_Score",
+    "Digestive_Issues",
+    "Doctor_Visits_Per_Year",
+    "Overall_Health_Score"
+  ],
+  "dtypes": {
+    "Age": "int64",
+    "Gender": "object",
+    "Fast_Food_Meals_Per_Week": "int64",
+    "Average_Daily_Calories": "int64",
+    "BMI": "float64",
+    "Physical_Activity_Hours_Per_Week": "float64",
+    "Sleep_Hours_Per_Day": "float64",
+    "Energy_Level_Score": "int64",
+    "Digestive_Issues": "object",
+    "Doctor_Visits_Per_Year": "int64",
+    "Overall_Health_Score": "int64"
+  },
+  "missing_values": {
+    "Age": 0,
+    "Gender": 0,
+    "Fast_Food_Meals_Per_Week": 0,
+    "Average_Daily_Calories": 0,
+    "BMI": 0,
+    "Physical_Activity_Hours_Per_Week": 0,
+    "Sleep_Hours_Per_Day": 0,
+    "Energy_Level_Score": 0,
+    "Digestive_Issues": 0,
+    "Doctor_Visits_Per_Year": 0,
+    "Overall_Health_Score": 0
+  }
+}

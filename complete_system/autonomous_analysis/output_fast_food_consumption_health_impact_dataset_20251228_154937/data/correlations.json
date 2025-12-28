@@ -1,0 +1,146 @@
+[
+  {
+    "pair": "Physical_Activity_Hours_Per_Week vs Age",
+    "correlation": -0.07430639182527307
+  },
+  {
+    "pair": "Energy_Level_Score vs Sleep_Hours_Per_Day",
+    "correlation": -0.071843965846788
+  },
+  {
+    "pair": "Overall_Health_Score vs BMI",
+    "correlation": 0.06134839344666824
+  },
+  {
+    "pair": "Overall_Health_Score vs Sleep_Hours_Per_Day",
+    "correlation": -0.05974527747176342
+  },
+  {
+    "pair": "Physical_Activity_Hours_Per_Week vs Fast_Food_Meals_Per_Week",
+    "correlation": -0.05973378440401759
+  },
+  {
+    "pair": "Overall_Health_Score vs Physical_Activity_Hours_Per_Week",
+    "correlation": -0.0591169940063433
+  },
+  {
+    "pair": "Energy_Level_Score vs Physical_Activity_Hours_Per_Week",
+    "correlation": 0.05880255560620623
+  },
+  {
+    "pair": "Sleep_Hours_Per_Day vs Age",
+    "correlation": -0.05847795977670287
+  },
+  {
+    "pair": "Overall_Health_Score vs Energy_Level_Score",
+    "correlation": 0.05573345807205833
+  },
+  {
+    "pair": "Physical_Activity_Hours_Per_Week vs BMI",
+    "correlation": -0.04903459965701196
+  },
+  {
+    "pair": "BMI vs Average_Daily_Calories",
+    "correlation": 0.04839541294860095
+  },
+  {
+    "pair": "Average_Daily_Calories vs Age",
+    "correlation": 0.04690748558906644
+  },
+  {
+    "pair": "Average_Daily_Calories vs Fast_Food_Meals_Per_Week",
+    "correlation": -0.04549717247141565
+  },
+  {
+    "pair": "Energy_Level_Score vs Age",
+    "correlation": -0.04365940540371371
+  },
+  {
+    "pair": "Energy_Level_Score vs Average_Daily_Calories",
+    "correlation": -0.041295422916004014
+  },
+  {
+    "pair": "Doctor_Visits_Per_Year vs Age",
+    "correlation": 0.04007861053410697
+  },
+  {
+    "pair": "Overall_Health_Score vs Fast_Food_Meals_Per_Week",
+    "correlation": 0.03727096059372142
+  },
+  {
+    "pair": "BMI vs Fast_Food_Meals_Per_Week",
+    "correlation": -0.03653907166029602
+  },
+  {
+    "pair": "Doctor_Visits_Per_Year vs BMI",
+    "correlation": 0.0321404894715308
+  },
+  {
+    "pair": "Energy_Level_Score vs BMI",
+    "correlation": -0.030461291575287687
+  },
+  {
+    "pair": "Doctor_Visits_Per_Year vs Sleep_Hours_Per_Day",
+    "correlation": 0.02952046870651505
+  },
+  {
+    "pair": "Sleep_Hours_Per_Day vs BMI",
+    "correlation": 0.027182128051458126
+  },
+  {
+    "pair": "Sleep_Hours_Per_Day vs Fast_Food_Meals_Per_Week",
+    "correlation": 0.026713964005021695
+  },
+  {
+    "pair": "Doctor_Visits_Per_Year vs Energy_Level_Score",
+    "correlation": 0.024965931508063074
+  },
+  {
+    "pair": "Sleep_Hours_Per_Day vs Physical_Activity_Hours_Per_Week",
+    "correlation": -0.019963035103683722
+  },
+  {
+    "pair": "Doctor_Visits_Per_Year vs Average_Daily_Calories",
+    "correlation": -0.01805093083525183
+  },
+  {
+    "pair": "Overall_Health_Score vs Average_Daily_Calories",
+    "correlation": -0.011144681716290324
+  },
+  {
+    "pair": "BMI vs Age",
+    "correlation": -0.009166899026395607
+  },
+  {
+    "pair": "Overall_Health_Score vs Age",
+    "correlation": -0.007557501724412432
+  },
+  {
+    "pair": "Doctor_Visits_Per_Year vs Fast_Food_Meals_Per_Week",
+    "correlation": 0.007510380978551351
+  },
+  {
+    "pair": "Energy_Level_Score vs Fast_Food_Meals_Per_Week",
+    "correlation": -0.006475312635582785
+  },
+  {
+    "pair": "Physical_Activity_Hours_Per_Week vs Average_Daily_Calories",
+    "correlation": 0.004939482540891931
+  },
+  {
+    "pair": "Fast_Food_Meals_Per_Week vs Age",
+    "correlation": -0.0027969529816324512
+  },
+  {
+    "pair": "Doctor_Visits_Per_Year vs Physical_Activity_Hours_Per_Week",
+    "correlation": -0.001870652908576069
+  },
+  {
+    "pair": "Overall_Health_Score vs Doctor_Visits_Per_Year",
+    "correlation": 0.0013759299448686453
+  },
+  {
+    "pair": "Sleep_Hours_Per_Day vs Average_Daily_Calories",
+    "correlation": -0.0011830228953367157
+  }
+]

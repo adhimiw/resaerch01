@@ -1,0 +1,16 @@
+{
+  "dataset": {
+    "name": "fast_food_consumption_health_impact_dataset",
+    "rows": 800,
+    "columns": 11,
+    "numeric_columns": 9,
+    "categorical_columns": 2
+  },
+  "insights": [
+    "{col}: Mean={mean_val:.2f}, Std={std_val:.2f}",
+    "{col}: Mean={mean_val:.2f}, Std={std_val:.2f}",
+    "{col}: Mean={mean_val:.2f}, Std={std_val:.2f}",
+    "{col}: Mean={mean_val:.2f}, Std={std_val:.2f}",
+    "{col}: Mean={mean_val:.2f}, Std={std_val:.2f}"
+  ]
+}

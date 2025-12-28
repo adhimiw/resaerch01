@@ -1,0 +1,16 @@
+{
+  "dataset": {
+    "name": "fast_food_consumption_health_impact_dataset",
+    "rows": 800,
+    "columns": 11,
+    "numeric_columns": 9,
+    "categorical_columns": 2
+  },
+  "insights": [
+    "Age: Mean=38.80, Std=12.06",
+    "Fast_Food_Meals_Per_Week: Mean=6.82, Std=4.33",
+    "Average_Daily_Calories: Mean=2554.73, Std=551.08",
+    "BMI: Mean=26.44, Std=4.94",
+    "Physical_Activity_Hours_Per_Week: Mean=4.94, Std=2.86"
+  ]
+}

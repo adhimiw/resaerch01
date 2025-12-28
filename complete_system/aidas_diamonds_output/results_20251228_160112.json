@@ -1,0 +1,708 @@
+{
+  "session_id": "20251228_160112",
+  "data_path": "/workspace/user_input_files/diamonds.csv",
+  "start_time": "2025-12-28T16:01:12.742549",
+  "phases": {
+    "data_ingestion": {
+      "status": "success",
+      "rows": 53940,
+      "columns": 10,
+      "dtypes": {
+        "carat": "float64",
+        "cut": "object",
+        "color": "object",
+        "clarity": "object",
+        "depth": "float64",
+        "table": "float64",
+        "x": "float64",
+        "y": "float64",
+        "z": "float64",
+        "price": "int64"
+      }
+    },
+    "data_cleaning": {
+      "status": "success",
+      "quality_report": {
+        "total_rows": 53940,
+        "total_columns": 10,
+        "missing_values": {
+          "carat": 0,
+          "cut": 0,
+          "color": 0,
+          "clarity": 0,
+          "depth": 0,
+          "table": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "price": 0
+        },
+        "duplicate_rows": "146",
+        "data_types": {
+          "carat": "float64",
+          "cut": "object",
+          "color": "object",
+          "clarity": "object",
+          "depth": "float64",
+          "table": "float64",
+          "x": "float64",
+          "y": "float64",
+          "z": "float64",
+          "price": "int64"
+        },
+        "quality_score": 0.9972932888394512,
+        "issues_found": [
+          "Found 146 duplicate rows"
+        ],
+        "suggested_fixes": [
+          "Remove 146 duplicate rows"
+        ]
+      },
+      "cleaned_rows": 53794,
+      "issues_fixed": 1
+    },
+    "exploratory_analysis": {
+      "status": "success",
+      "numeric_summary": {
+        "carat": {
+          "mean": 0.798,
+          "std": 0.473,
+          "min": 0.2,
+          "max": 5.01,
+          "median": 0.7,
+          "skewness": 1.114,
+          "kurtosis": 1.247
+        },
+        "depth": {
+          "mean": 61.748,
+          "std": 1.43,
+          "min": 43.0,
+          "max": 79.0,
+          "median": 61.8,
+          "skewness": -0.114,
+          "kurtosis": 5.413
+        },
+        "table": {
+          "mean": 57.458,
+          "std": 2.234,
+          "min": 43.0,
+          "max": 95.0,
+          "median": 57.0,
+          "skewness": 0.792,
+          "kurtosis": 2.775
+        },
+        "x": {
+          "mean": 5.731,
+          "std": 1.121,
+          "min": 0.0,
+          "max": 10.74,
+          "median": 5.7,
+          "skewness": 0.38,
+          "kurtosis": -0.629
+        },
+        "y": {
+          "mean": 5.735,
+          "std": 1.141,
+          "min": 0.0,
+          "max": 58.9,
+          "median": 5.71,
+          "skewness": 2.446,
+          "kurtosis": 91.752
+        },
+        "z": {
+          "mean": 3.539,
+          "std": 0.705,
+          "min": 0.0,
+          "max": 31.8,
+          "median": 3.53,
+          "skewness": 1.529,
+          "kurtosis": 47.384
+        },
+        "price": {
+          "mean": 3933.065,
+          "std": 3988.114,
+          "min": "326",
+          "max": "18823",
+          "median": 2401.0,
+          "skewness": 1.618,
+          "kurtosis": 2.178
+        }
+      },
+      "categorical_summary": {
+        "cut": {
+          "unique_values": 5,
+          "top_values": {
+            "Ideal": 21488,
+            "Premium": 13748,
+            "Very Good": 12069,
+            "Good": 4891,
+            "Fair": 1598
+          }
+        },
+        "color": {
+          "unique_values": 7,
+          "top_values": {
+            "G": 11262,
+            "E": 9776,
+            "F": 9520,
+            "H": 8272,
+            "D": 6755
+          }
+        },
+        "clarity": {
+          "unique_values": 8,
+          "top_values": {
+            "SI1": 13032,
+            "VS2": 12229,
+            "SI2": 9150,
+            "VS1": 8156,
+            "VVS2": 5056
+          }
+        }
+      },
+      "correlations": [
+        {
+          "var1": "carat",
+          "var2": "x",
+          "correlation": 0.975,
+          "strength": "strong"
+        },
+        {
+          "var1": "x",
+          "var2": "y",
+          "correlation": 0.975,
+          "strength": "strong"
+        },
+        {
+          "var1": "x",
+          "var2": "z",
+          "correlation": 0.971,
+          "strength": "strong"
+        },
+        {
+          "var1": "carat",
+          "var2": "z",
+          "correlation": 0.954,
+          "strength": "strong"
+        },
+        {
+          "var1": "carat",
+          "var2": "y",
+          "correlation": 0.952,
+          "strength": "strong"
+        },
+        {
+          "var1": "y",
+          "var2": "z",
+          "correlation": 0.952,
+          "strength": "strong"
+        },
+        {
+          "var1": "carat",
+          "var2": "price",
+          "correlation": 0.922,
+          "strength": "strong"
+        },
+        {
+          "var1": "x",
+          "var2": "price",
+          "correlation": 0.885,
+          "strength": "strong"
+        },
+        {
+          "var1": "y",
+          "var2": "price",
+          "correlation": 0.865,
+          "strength": "strong"
+        },
+        {
+          "var1": "z",
+          "var2": "price",
+          "correlation": 0.861,
+          "strength": "strong"
+        }
+      ],
+      "distributions": {
+        "carat": {
+          "shape": "skewed",
+          "outliers": 26379
+        },
+        "depth": {
+          "shape": "normal",
+          "outliers": 25372
+        },
+        "table": {
+          "shape": "skewed",
+          "outliers": 19085
+        },
+        "x": {
+          "shape": "normal",
+          "outliers": 26591
+        },
+        "y": {
+          "shape": "skewed",
+          "outliers": 26522
+        }
+      }
+    },
+    "hypothesis_discovery": {
+      "status": "success",
+      "hypotheses_found": 13,
+      "hypothesis_ids": [
+        "H001",
+        "H002",
+        "H003",
+        "H004",
+        "H005",
+        "H006",
+        "H007",
+        "H008",
+        "H009",
+        "H010",
+        "H011",
+        "H012",
+        "H013"
+      ]
+    },
+    "hypothesis_testing": {
+      "status": "success",
+      "significant_hypotheses": 13,
+      "tested_hypotheses": [
+        {
+          "id": "H001",
+          "statement": "There is a relationship between carat and x",
+          "variables": [
+            "carat",
+            "x"
+          ],
+          "test_type": "correlation",
+          "statistic": 0.9753796376444198,
+          "p_value": 0.0,
+          "significance_level": 0.05,
+          "is_significant": "True",
+          "effect_size": 0.9753796376444198,
+          "confidence_interval": [
+            0.9669290063807283,
+            0.9838302689081113
+          ],
+          "explanation": "There is a strong positive relationship (r=0.975, p=0.0000). This means when one variable increases, the other tends to increase."
+        },
+        {
+          "id": "H002",
+          "statement": "There is a relationship between x and y",
+          "variables": [
+            "x",
+            "y"
+          ],
+          "test_type": "correlation",
+          "statistic": 0.974592228970391,
+          "p_value": 0.0,
+          "significance_level": 0.05,
+          "is_significant": "True",
+          "effect_size": 0.974592228970391,
+          "confidence_interval": [
+            0.9661415977066995,
+            0.9830428602340825
+          ],
+          "explanation": "There is a strong positive relationship (r=0.975, p=0.0000). This means when one variable increases, the other tends to increase."
+        },
+        {
+          "id": "H003",
+          "statement": "There is a relationship between x and z",
+          "variables": [
+            "x",
+            "z"
+          ],
+          "test_type": "correlation",
+          "statistic": 0.9706862032534097,
+          "p_value": 0.0,
+          "significance_level": 0.05,
+          "is_significant": "True",
+          "effect_size": 0.9706862032534097,
+          "confidence_interval": [
+            0.9622355719897182,
+            0.9791368345171012
+          ],
+          "explanation": "There is a strong positive relationship (r=0.971, p=0.0000). This means when one variable increases, the other tends to increase."
+        },
+        {
+          "id": "H004",
+          "statement": "There is a relationship between carat and z",
+          "variables": [
+            "carat",
+            "z"
+          ],
+          "test_type": "correlation",
+          "statistic": 0.9535419924502028,
+          "p_value": 0.0,
+          "significance_level": 0.05,
+          "is_significant": "True",
+          "effect_size": 0.9535419924502028,
+          "confidence_interval": [
+            0.9450913611865113,
+            0.9619926237138943
+          ],
+          "explanation": "There is a strong positive relationship (r=0.954, p=0.0000). This means when one variable increases, the other tends to increase."
+        },
+        {
+          "id": "H005",
+          "statement": "There is a relationship between carat and y",
+          "variables": [
+            "carat",
+            "y"
+          ],
+          "test_type": "correlation",
+          "statistic": 0.9519084065073378,
+          "p_value": 0.0,
+          "significance_level": 0.05,
+          "is_significant": "True",
+          "effect_size": 0.9519084065073378,
+          "confidence_interval": [
+            0.9434577752436463,
+            0.9603590377710293
+          ],
+          "explanation": "There is a strong positive relationship (r=0.952, p=0.0000). This means when one variable increases, the other tends to increase."
+        },
+        {
+          "id": "H006",
+          "statement": "There is a relationship between y and z",
+          "variables": [
+            "y",
+            "z"
+          ],
+          "test_type": "correlation",
+          "statistic": 0.9518439491152002,
+          "p_value": 0.0,
+          "significance_level": 0.05,
+          "is_significant": "True",
+          "effect_size": 0.9518439491152002,
+          "confidence_interval": [
+            0.9433933178515087,
+            0.9602945803788917
+          ],
+          "explanation": "There is a strong positive relationship (r=0.952, p=0.0000). This means when one variable increases, the other tends to increase."
+        },
+        {
+          "id": "H007",
+          "statement": "There is a relationship between carat and price",
+          "variables": [
+            "carat",
+            "price"
+          ],
+          "test_type": "correlation",
+          "statistic": 0.9215483214030121,
+          "p_value": 0.0,
+          "significance_level": 0.05,
+          "is_significant": "True",
+          "effect_size": 0.9215483214030121,
+          "confidence_interval": [
+            0.9130976901393206,
+            0.9299989526667036
+          ],
+          "explanation": "There is a strong positive relationship (r=0.922, p=0.0000). This means when one variable increases, the other tends to increase."
+        },
+        {
+          "id": "H008",
+          "statement": "There is a relationship between x and price",
+          "variables": [
+            "x",
+            "price"
+          ],
+          "test_type": "correlation",
+          "statistic": 0.8845040375175468,
+          "p_value": 0.0,
+          "significance_level": 0.05,
+          "is_significant": "True",
+          "effect_size": 0.8845040375175468,
+          "confidence_interval": [
+            0.8760534062538553,
+            0.8929546687812383
+          ],
+          "explanation": "There is a strong positive relationship (r=0.885, p=0.0000). This means when one variable increases, the other tends to increase."
+        },
+        {
+          "id": "H009",
+          "statement": "There is a relationship between y and price",
+          "variables": [
+            "y",
+            "price"
+          ],
+          "test_type": "correlation",
+          "statistic": 0.8653952444045167,
+          "p_value": 0.0,
+          "significance_level": 0.05,
+          "is_significant": "True",
+          "effect_size": 0.8653952444045167,
+          "confidence_interval": [
+            0.8569446131408252,
+            0.8738458756682081
+          ],
+          "explanation": "There is a strong positive relationship (r=0.865, p=0.0000). This means when one variable increases, the other tends to increase."
+        },
+        {
+          "id": "H010",
+          "statement": "There is a relationship between z and price",
+          "variables": [
+            "z",
+            "price"
+          ],
+          "test_type": "correlation",
+          "statistic": 0.8612077326584752,
+          "p_value": 0.0,
+          "significance_level": 0.05,
+          "is_significant": "True",
+          "effect_size": 0.8612077326584752,
+          "confidence_interval": [
+            0.8527571013947837,
+            0.8696583639221667
+          ],
+          "explanation": "There is a strong positive relationship (r=0.861, p=0.0000). This means when one variable increases, the other tends to increase."
+        },
+        {
+          "id": "H011",
+          "statement": "carat differs across cut categories",
+          "variables": [
+            "carat",
+            "cut"
+          ],
+          "test_type": "group_comparison",
+          "statistic": 487.4060302897995,
+          "p_value": 0.0,
+          "significance_level": 0.05,
+          "is_significant": "True",
+          "effect_size": 4.874060302897995,
+          "confidence_interval": [
+            0,
+            0
+          ],
+          "explanation": "Found statistically significant differences between groups in cut (F=487.41, p=0.0000)."
+        },
+        {
+          "id": "H012",
+          "statement": "depth differs across cut categories",
+          "variables": [
+            "depth",
+            "cut"
+          ],
+          "test_type": "group_comparison",
+          "statistic": 1872.31805946627,
+          "p_value": 0.0,
+          "significance_level": 0.05,
+          "is_significant": "True",
+          "effect_size": 18.7231805946627,
+          "confidence_interval": [
+            0,
+            0
+          ],
+          "explanation": "Found statistically significant differences between groups in cut (F=1872.32, p=0.0000)."
+        },
+        {
+          "id": "H013",
+          "statement": "table differs across cut categories",
+          "variables": [
+            "table",
+            "cut"
+          ],
+          "test_type": "group_comparison",
+          "statistic": 6354.733245276203,
+          "p_value": 0.0,
+          "significance_level": 0.05,
+          "is_significant": "True",
+          "effect_size": 63.54733245276203,
+          "confidence_interval": [
+            0,
+            0
+          ],
+          "explanation": "Found statistically significant differences between groups in cut (F=6354.73, p=0.0000)."
+        }
+      ]
+    },
+    "model_building": {
+      "status": "success",
+      "models_built": 2,
+      "model_types": [
+        "Linear Regression",
+        "Random Forest Regressor"
+      ],
+      "best_model": "Random Forest Regressor"
+    },
+    "insight_generation": {
+      "status": "success",
+      "insights_count": 9,
+      "insights": [
+        {
+          "id": "I001",
+          "category": "Statistical Finding",
+          "description": "There is a relationship between carat and x",
+          "evidence": "P-value: 0.0000, Effect size: 0.975",
+          "impact": "high",
+          "recommendation": "Consider this relationship when making decisions",
+          "confidence": 1.0,
+          "supporting_metrics": {
+            "statistic": 0.9753796376444198,
+            "p_value": 0.0,
+            "variables": [
+              "carat",
+              "x"
+            ]
+          }
+        },
+        {
+          "id": "I002",
+          "category": "Statistical Finding",
+          "description": "There is a relationship between x and y",
+          "evidence": "P-value: 0.0000, Effect size: 0.975",
+          "impact": "high",
+          "recommendation": "Consider this relationship when making decisions",
+          "confidence": 1.0,
+          "supporting_metrics": {
+            "statistic": 0.974592228970391,
+            "p_value": 0.0,
+            "variables": [
+              "x",
+              "y"
+            ]
+          }
+        },
+        {
+          "id": "I003",
+          "category": "Statistical Finding",
+          "description": "There is a relationship between x and z",
+          "evidence": "P-value: 0.0000, Effect size: 0.971",
+          "impact": "high",
+          "recommendation": "Consider this relationship when making decisions",
+          "confidence": 1.0,
+          "supporting_metrics": {
+            "statistic": 0.9706862032534097,
+            "p_value": 0.0,
+            "variables": [
+              "x",
+              "z"
+            ]
+          }
+        },
+        {
+          "id": "I004",
+          "category": "Statistical Finding",
+          "description": "There is a relationship between carat and z",
+          "evidence": "P-value: 0.0000, Effect size: 0.954",
+          "impact": "high",
+          "recommendation": "Consider this relationship when making decisions",
+          "confidence": 1.0,
+          "supporting_metrics": {
+            "statistic": 0.9535419924502028,
+            "p_value": 0.0,
+            "variables": [
+              "carat",
+              "z"
+            ]
+          }
+        },
+        {
+          "id": "I005",
+          "category": "Statistical Finding",
+          "description": "There is a relationship between carat and y",
+          "evidence": "P-value: 0.0000, Effect size: 0.952",
+          "impact": "high",
+          "recommendation": "Consider this relationship when making decisions",
+          "confidence": 1.0,
+          "supporting_metrics": {
+            "statistic": 0.9519084065073378,
+            "p_value": 0.0,
+            "variables": [
+              "carat",
+              "y"
+            ]
+          }
+        },
+        {
+          "id": "I006",
+          "category": "Predictive Model",
+          "description": "Best model: Random Forest Regressor with F1 score of 0.880",
+          "evidence": "Accuracy: 0.880, ROC-AUC: 0.880",
+          "impact": "high",
+          "recommendation": "Consider deploying Random Forest Regressor for predictions",
+          "confidence": 0.8803,
+          "supporting_metrics": {
+            "model_type": "Random Forest Regressor",
+            "metrics": {
+              "model_type": "Random Forest Regressor",
+              "accuracy": 0.8803,
+              "precision": 1350.8805,
+              "recall": -1350.8805,
+              "f1_score": 0.8803,
+              "roc_auc": 0.8803,
+              "feature_importance": {
+                "carat": 0.4936,
+                "y": 0.4209,
+                "x": 0.0254,
+                "depth": 0.0253,
+                "z": 0.0191,
+                "table": 0.0157
+              },
+              "confusion_matrix": [],
+              "cross_validation_scores": [
+                0.8717384252386968,
+                0.8820945084391123,
+                0.8771055534463398,
+                0.882350070095995,
+                0.8784747900096387
+              ],
+              "errors": []
+            }
+          }
+        },
+        {
+          "id": "I007",
+          "category": "Feature Importance",
+          "description": "'carat' is a key predictor with importance 5081.567",
+          "evidence": "Feature importance score: 5081.567",
+          "impact": "moderate",
+          "recommendation": "Focus on collecting high-quality data for carat",
+          "confidence": 5081.5669,
+          "supporting_metrics": {
+            "feature": "carat",
+            "importance": 5081.5669
+          }
+        },
+        {
+          "id": "I008",
+          "category": "Feature Importance",
+          "description": "'x' is a key predictor with importance 1590.379",
+          "evidence": "Feature importance score: 1590.379",
+          "impact": "moderate",
+          "recommendation": "Focus on collecting high-quality data for x",
+          "confidence": 1590.3789,
+          "supporting_metrics": {
+            "feature": "x",
+            "importance": 1590.3789
+          }
+        },
+        {
+          "id": "I009",
+          "category": "Feature Importance",
+          "description": "'depth' is a key predictor with importance 312.932",
+          "evidence": "Feature importance score: 312.932",
+          "impact": "moderate",
+          "recommendation": "Focus on collecting high-quality data for depth",
+          "confidence": 312.9322,
+          "supporting_metrics": {
+            "feature": "depth",
+            "importance": 312.9322
+          }
+        }
+      ]
+    },
+    "explanation_generation": {
+      "status": "success",
+      "explanation": "## \ud83d\udcca Data Overview\n\nThis analysis examined a dataset with **53794 observations** and **10 variables**.\nThe data contained a mix of numeric and categorical features that allowed for comprehensive analysis.\n\n## \ud83d\udd0d Key Statistical Findings\n\nWe conducted statistical tests on 13 hypotheses and found **13 statistically significant findings**:\n\n\n- **There is a relationship between carat and x**\n  - There is a strong positive relationship (r=0.975, p=0.0000). This means when one variable increases, the other tends to increase.\n\n- **There is a relationship between x and y**\n  - There is a strong positive relationship (r=0.975, p=0.0000). This means when one variable increases, the other tends to increase.\n\n- **There is a relationship between x and z**\n  - There is a strong positive relationship (r=0.971, p=0.0000). This means when one variable increases, the other tends to increase.\n\n\n## \ud83d\udca1 Actionable Insights\n\nThe analysis identified **9 key insights** that can drive decision-making:\n\n\n\n### Statistical Finding: There is a relationship between carat and x\n- **Evidence:** P-value: 0.0000, Effect size: 0.975\n- **Impact:** HIGH\n- **Recommendation:** Consider this relationship when making decisions\n- **Confidence:** 100.0%\n\n\n### Statistical Finding: There is a relationship between x and y\n- **Evidence:** P-value: 0.0000, Effect size: 0.975\n- **Impact:** HIGH\n- **Recommendation:** Consider this relationship when making decisions\n- **Confidence:** 100.0%\n\n\n### Statistical Finding: There is a relationship between x and z\n- **Evidence:** P-value: 0.0000, Effect size: 0.971\n- **Impact:** HIGH\n- **Recommendation:** Consider this relationship when making decisions\n- **Confidence:** 100.0%\n\n\n### Statistical Finding: There is a relationship between carat and z\n- **Evidence:** P-value: 0.0000, Effect size: 0.954\n- **Impact:** HIGH\n- **Recommendation:** Consider this relationship when making decisions\n- **Confidence:** 100.0%\n\n\n### Statistical Finding: There is a relationship between carat and y\n- **Evidence:** P-value: 0.0000, Effect size: 0.952\n- **Impact:** HIGH\n- **Recommendation:** Consider this relationship when making decisions\n- **Confidence:** 100.0%\n\n\n## \ud83e\udd16 Predictive Models\n\nWe built and evaluated 2 predictive models to identify patterns and make forecasts.\n\n**Best Performing Model:** Random Forest Regressor\n- **Accuracy:** 88.0%\n- **F1 Score:** 0.880\n- **ROC-AUC:** 0.880\n\n**Top Predictive Features:**\n\n- carat: 0.494\n- y: 0.421\n- x: 0.025\n- depth: 0.025\n- z: 0.019\n\n## \ud83c\udfaf Recommendations\n- Act on the statistically significant findings to improve outcomes\n- Collect more data on high-importance features identified in the model\n- Consider deploying the predictive model for real-world applications\n- Continue monitoring key metrics identified in this analysis"
+    },
+    "report_generation": {
+      "status": "success",
+      "report_path": "aidas_diamonds_output/report_20251228_160112.md"
+    }
+  },
+  "status": "success",
+  "end_time": "2025-12-28T16:02:13.879178",
+  "total_duration": 61.13663697242737
+}
